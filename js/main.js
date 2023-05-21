@@ -3,4 +3,9 @@ new Vue({
   data: {
     name: "Aron",
   },
+  methods: {
+    changeName: function () {
+      this.name = "Alvarenga";
+    },
+  },
 });
