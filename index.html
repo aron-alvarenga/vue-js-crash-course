@@ -9,6 +9,7 @@
   <body>
     <div id="app">
       <p>{{ name }}</p>
+      <p v-if="name == 'Aron' ? false : true">Name updated!</p>
       <button v-on:click="changeName">Change Name</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
