@@ -9,6 +9,8 @@
   </head>
   <body>
     <div id="app">
+      <app-username></app-username>
+      <app-username></app-username>
       <p v-bind:class="{updated: name == 'Aron' ? false : true}">{{ name }}</p>
       <p v-if="name == 'Aron' ? false : true">Name updated!</p>
       <button v-on:click="changeName">Change Name</button>
@@ -27,10 +29,6 @@
       <p>Second Vue Instance</p>
       <p>{{ message }}</p>
     </div>
-
-    <div class="username">{{ username }}</div>
-    <!-- It will only select and control the first occurrence of this selector it finds. SOLUTION: Components. -->
-    <div class="username">{{ username }}</div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="./js/main.js"></script>
   </body>
