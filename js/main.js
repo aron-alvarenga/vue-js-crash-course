@@ -23,3 +23,11 @@ new Vue({
     message: "Hello there",
   },
 });
+
+new Vue({
+  //A vue instance can only control one part of your code, not multiple ones. SOLUTION: Components.
+  el: ".username",
+  data: {
+    username: "Aron",
+  },
+});
